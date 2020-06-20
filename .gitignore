@@ -111,3 +111,6 @@ coverage
 exports
 .cache
 build
+
+# Prevent heroku bugs
+package-lock.json
