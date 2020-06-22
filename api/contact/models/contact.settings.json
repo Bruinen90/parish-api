@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "contacts",
+  "info": {
+    "name": "contact"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "phoneNumber": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contacts.phone-number",
+      "required": true
+    },
+    "address": {
+      "type": "component",
+      "repeatable": false,
+      "component": "contacts.address"
+    },
+    "email": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contacts.email"
+    }
+  }
+}

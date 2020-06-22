@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "announcements",
+  "info": {
+    "name": "announcement"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "holidayName": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "date",
+      "private": false,
+      "required": true
+    },
+    "news": {
+      "type": "component",
+      "repeatable": true,
+      "component": "news.news",
+      "required": true
+    }
+  }
+}

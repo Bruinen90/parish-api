@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_news_news",
+  "info": {
+    "name": "news",
+    "icon": "angle-right"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text",
+      "required": true
+    },
+    "bold": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

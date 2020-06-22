@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_contacts_addresses",
+  "info": {
+    "name": "address",
+    "icon": "map-pin"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "street": {
+      "type": "string",
+      "required": true
+    },
+    "buildingNumber": {
+      "type": "string",
+      "required": true
+    },
+    "googleMapsString": {
+      "type": "string"
+    },
+    "postalCode": {
+      "type": "string",
+      "required": true
+    },
+    "city": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
