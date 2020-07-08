@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "messes",
+  "info": {
+    "name": "mess"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "messDayName": {
+      "type": "string"
+    },
+    "mess": {
+      "type": "component",
+      "repeatable": true,
+      "component": "messes.mess",
+      "required": true
+    }
+  }
+}
