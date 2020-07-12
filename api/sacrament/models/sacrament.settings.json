@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sacraments",
+  "info": {
+    "name": "sacrament"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "shortDescription": {
+      "type": "string",
+      "required": true
+    },
+    "photo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "fullDescription": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}
